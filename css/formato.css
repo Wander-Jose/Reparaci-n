@@ -1,0 +1,344 @@
+/* Estilo global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header principal */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #1abc9c;
+}
+
+/* Responsivo: Adaptar a pantallas pequeñas */
+@media (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        width: 100%;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* inicio--------------------------------------------------------------------------------------------------- */
+
+.bien-venida {
+    background-color: #1abc9c;
+    width: 100%; /* Ancho de la caja */
+    height: 200px; /* Alto de la caja */
+    overflow: hidden; /* Asegura que la imagen no se salga de la caja */
+}
+.slogan {
+    position: absolute;
+    width: 70%;
+    top: 35%; /* Ajusta la posición vertical */
+    left: 50%; /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el título */
+    color: white;
+    font-size: 84px; /* Cambia el tamaño del texto según tus necesidades */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega sombra para mayor contraste */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    border-radius: 5px;
+    text-align: center;
+}
+.img-bien-venida {
+    width: 100%; /* Ancho de la caja */
+    overflow: hidden; /* Asegura que la imagen no se salga de la caja */
+}
+
+/* desbloqueo------------------------------------------------------------------------------------------------ */
+.select-marca {
+    text-align: center;
+}
+
+.caja-principal {
+    display: flex; /* Flexbox para alinear cajas horizontalmente */
+    gap: 20px; /* Espaciado entre las cajas */
+}
+
+.caja-marcas {
+    width: 40%; /* Ancho de la caja */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styles for the list */
+.phone-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phone-list li {
+    position: relative;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: #f0f0f0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.phone-list li:hover {
+    background: #007BFF;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Adding an icon (optional) */
+.phone-list li::before {
+    content: "📱"; /* Emoji for the phone */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.phone-list li:hover::before {
+    transform: translateY(-50%) rotate(15deg);
+}
+
+
+/* Estilo de las cajas */
+.box {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 255, 0.4); /* Sombra azul */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+/* Imagen dentro de las cajas */
+.box img {
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+/* Efecto hover */
+.box:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.6); /* Aumenta la intensidad de la sombra */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styles for the iframe box */
+.iframe-box {
+    width: 55%;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+}
+
+.iframe-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Elimina el borde del iframe */
+}
+
+.img-fondo {
+    width: 100%;
+    height: 250px;
+}
+
+.caja-aliento {
+    width: 100%;
+}
+
+.aliento-a-seguirnos {
+    position: absolute;
+    width: 90%;
+    top: 93%; /* Ajusta la posición vertical */
+    left: 50%; /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el título */
+    color: white;
+    font-size: 40px; /* Cambia el tamaño del texto según tus necesidades */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega sombra para mayor contraste */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* reparacion------------------------------------------------------------------------------------------------ */
+
+
+
+/*dudas-------------------------------------------------------------------------------------------------------*/
+.dudas-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.dudas-title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.dudas-description {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Formulario de dudas */
+.dudas-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dudas-form label {
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: left;
+}
+
+.dudas-form input,
+.dudas-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.dudas-form input:focus,
+.dudas-form textarea:focus {
+    border-color: #3498db;
+}
+
+.dudas-form button {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dudas-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer principal---------------------------------------------------------------------------- */
+.main-footer {
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #1abc9c; /* Cambiar color al pasar el cursor */
+}
+
+/* Texto del footer */
+.footer-text {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.8;
+}
